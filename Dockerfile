@@ -9,7 +9,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # install app dependencies
-wget https://raw.githubusercontent.com/XenMe/ns-radius/master/package.json
+RUN wget https://raw.githubusercontent.com/XenMe/ns-radius/master/package.json
 RUN npm install
 
 # fetch radius-svr.js
