@@ -14,11 +14,11 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # install app dependencies
-RUN wget https://raw.githubusercontent.com/XenMe/ns-radius/master/package.json
+RUN curl -SLO https://raw.githubusercontent.com/XenMe/ns-radius/master/package.json
 RUN npm install
 
 # fetch radius-svr.js
-RUN wget https://raw.githubusercontent.com/XenMe/ns-radius/master/radius-svr.js
+RUN curl -SLO https://raw.githubusercontent.com/XenMe/ns-radius/master/radius-svr.js
 
 EXPOSE 1812/udp
 
