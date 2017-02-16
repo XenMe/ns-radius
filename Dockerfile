@@ -1,6 +1,10 @@
 FROM node:boron
-
 MAINTAINER Froyo Yao <froyo@xenme.com>
+
+# set version label
+ARG BUILD_DATE
+ARG VERSION
+LABEL build_version="ns-radius version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
 ENV PORT 1812
 
