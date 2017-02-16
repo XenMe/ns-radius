@@ -12,11 +12,19 @@ It designed for testing below two scenarios:
 # xenme/ns-radius
 [![](https://images.microbadger.com/badges/version/xenme/ns-radius.svg)](https://microbadger.com/images/xenme/ns-radius)[![](https://images.microbadger.com/badges/image/xenme/ns-radius.svg)](https://microbadger.com/images/xenme/ns-radius)
 
+[![](https://images.microbadger.com/badges/version/xenme/ns-radius:minimal.svg)](https://microbadger.com/images/xenme/ns-radius:minimal)[![](https://images.microbadger.com/badges/image/xenme/ns-radius:minimal.svg)](https://microbadger.com/images/xenme/ns-radius:minimal)
+
 ## Usage
 
 ### Deployment
 
 Recommend deploy ns-radius using docker, there is a AUTOMATED BUILD on docker hub.
+
+https://hub.docker.com/r/xenme/ns-radius/
+
+**Supported tags:** 
+ - latest: This is based on official nodejs docker image
+ - minimal: This is based on alpine image, compressed docker file only have 13MB, recommended.
 
 ### Configure NetScaler
 1. Add a radius server point to your docker container and use port 1812/udp
@@ -39,6 +47,12 @@ Recommend deploy ns-radius using docker, there is a AUTOMATED BUILD on docker hu
 
 ### 部署
 建议通过docker方式部署，目前在docker hub上有AUTOMATED BUILD
+
+https://hub.docker.com/r/xenme/ns-radius/
+
+**支持的docker tags** 
+ - `latest`: 基于nodejs官方docker image制作
+ - `minimal`: 基于alpine image制作，大小只有13MB（而latest至少在250MB+），推荐使用该镜像
 
 ### 配置NetScaler
 1. 添加一个radius server指向docker container，端口为1812，目前只支持UDP
