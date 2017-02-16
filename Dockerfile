@@ -1,14 +1,6 @@
 FROM node:boron
 MAINTAINER Froyo Yao <froyo@xenme.com>
 
-ARG BUILD_DATE
-ARG VCS_REF
-ARG VERSION
-LABEL org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.vcs-url="https://github.com/XenMe/ns-radius.git" \
-      org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.version=$VERSION
-
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
