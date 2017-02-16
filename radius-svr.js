@@ -46,7 +46,7 @@ srv.on('message',(msg, rinfo)=>{
     } else {
         //reply with Access-Challenge
         console.log('Response with Access-Challenge.');
-        let otpbuf = new Buffer('0101000501','hex');
+        let otpbuf = new Buffer('0101000505','hex');
         challenge = radius.encode_response({
             packet: request,
             code: "Access-Challenge",
