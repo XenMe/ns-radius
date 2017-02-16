@@ -25,7 +25,7 @@ srv.on('message',(msg, rinfo)=>{
     let username = request.attributes['User-Name'];
     let password = request.attributes['User-Password'];
 
-    var challenge;
+    let challenge;
     if(password == SMS_TOKEN) {
         //reply with Access-Accept
         console.log('Response with Access-Accept.');
@@ -66,7 +66,7 @@ srv.on('message',(msg, rinfo)=>{
 });
 
 srv.on('listening',()=>{
-    var addr = srv.address();
+    let addr = srv.address();
     console.log(`server listening ${addr.address}:${addr.port}`);
 });
 
