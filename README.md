@@ -10,8 +10,7 @@ It designed for testing below two scenarios:
 ---
 
 # xenme/ns-radius
-[![](https://images.microbadger.com/badges/version/xenme/ns-radius.svg)](https://microbadger.com/images/xenme/ns-radius "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/xenme/ns-radius.svg)](https://microbadger.com/images/xenme/ns-radius "Get your own image badge on microbadger.com")
-
+[![](https://images.microbadger.com/badges/version/xenme/ns-radius.svg)](https://microbadger.com/images/xenme/ns-radius)[![](https://images.microbadger.com/badges/image/xenme/ns-radius.svg)](https://microbadger.com/images/xenme/ns-radius)
 
 ## Usage
 
