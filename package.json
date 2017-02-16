@@ -1,0 +1,20 @@
+{
+  "name": "ns-radius",
+  "version": "1.0.0",
+  "description": "radius server for netscaler testing",
+  "author": "Froyo Yao <froyo@xenme.com>",
+  "main": "radius-svr.js",
+  "scripts": {
+    "start": "node radius-svr.js"
+  },
+  "keywords": [
+    "radius",
+    "netscaler",
+    "two-factor",
+    "otp",
+    "SMS"
+  ],
+  "dependencies": {
+    "radius": "^1.1.3"
+  }
+}
