@@ -23,8 +23,8 @@ Recommend deploy ns-radius using docker, there is a AUTOMATED BUILD on docker hu
 https://hub.docker.com/r/xenme/ns-radius/
 
 **Supported tags:** 
- - latest: This is based on official nodejs docker image
- - minimal: This is based on alpine image, compressed docker file only have 13MB, recommended.
+ - `latest`: This is based on official nodejs docker image
+ - `minimal`: This is based on alpine image, compressed docker file only have 13MB, recommended.
 
 ### Configure NetScaler
 1. Add a radius server point to your docker container and use port 1812/udp
