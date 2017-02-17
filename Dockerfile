@@ -1,4 +1,4 @@
-FROM node:boron
+FROM node:boron-alpine
 MAINTAINER Froyo Yao <froyo@xenme.com>
 
 # Create app directory
