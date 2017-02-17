@@ -1,6 +1,9 @@
 FROM node:boron-alpine
 MAINTAINER Froyo Yao <froyo@xenme.com>
 
+# add curl
+RUN apk --no-cache add curl
+
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
