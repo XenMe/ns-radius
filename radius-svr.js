@@ -14,7 +14,7 @@ const TF_FAILED_TOKEN = '000000';
 
 srv.on('error',(e)=>{
     console.log(e);
-srv.close();
+    srv.close();
 });
 
 srv.on('message',(msg, rinfo)=>{
